@@ -1,3 +1,7 @@
 node_modules
 *.log
+<<<<<<< HEAD
 .DS_Storegit
+=======
+.DS_Store
+>>>>>>> 4b9193571b53144c4a57822347c13a1659103e14
