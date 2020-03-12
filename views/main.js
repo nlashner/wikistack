@@ -1,5 +1,16 @@
 const html = require("html-template-tag");
 const layout = require("./layout");
+const express = require("express")
+
+const PORT = 8000
+app.listen(PORT, () => {
+  console.log(`Listening in ${PORT}`)
+} )
+
+
+
+
+
 
 module.exports = (pages) => layout(html`
   <h3>Pages</h3>
