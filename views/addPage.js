@@ -5,11 +5,15 @@ module.exports = () => layout(html`
   <h3>Add a Page</h3>
   <hr>
   <form method="POST" action="/wiki/">
-    
-    <div>PLACEHOLDER FOR AUTHOR NAME FIELD</div>
-    
-    <div>PLACEHOLDER FOR AUTHOR EMAIL FIELD</div>
-    
+
+    <div class="form-group">
+      <input id="name" name="name" type="text" class="form-control"/>
+    </div>
+
+    <div class="form-group">
+    <input id="email" name="email" type="text" class="form-control"/>
+    </div>
+
     <div class="form-group">
       <label for="title" class="col-sm-2 control-label">Page Title</label>
       <div class="col-sm-10">
@@ -17,13 +21,15 @@ module.exports = () => layout(html`
       </div>
     </div>
 
-    <div>PLACEHOLDER FOR PAGE CONTENT TEXTAREA FIELD</div>
-    
-    <div>PLACEHOLDER FOR PAGE STATUS INPUT FIELD</div>
+    <div class="form-group">
+    <input id="content" name="content" type="text" class="form-control"/>
+    /div>
+
+    <div class="form-group">PLACEHOLDER FOR PAGE STATUS INPUT FIELD</div>
 
     <div class="col-sm-offset-2 col-sm-10">
       <button type="submit" class="btn btn-primary">submit</button>
     </div>
-  
+
   </form>
 `);

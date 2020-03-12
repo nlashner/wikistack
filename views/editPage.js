@@ -7,7 +7,7 @@ module.exports = (page, author) => layout(html`
   <form method="POST" action="/wiki/${page.slug}">
 
     <div>PLACEHOLDER FOR AUTHOR NAME FIELD</div>
-    
+
     <div>PLACEHOLDER FOR AUTHOR EMAIL FIELD</div>
 
     <div class="form-group">
@@ -17,7 +17,9 @@ module.exports = (page, author) => layout(html`
       </div>
     </div>
 
-    <div>PLACEHOLDER FOR PAGE CONTENT TEXTAREA FIELD</div>
+    <div>
+      <input id="status" name="status" type="text" class="form-control"/>
+    </div>
 
     <div class="form-group">
       <label for="content" class="col-sm-2 control-label">Status</label>
